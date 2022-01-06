@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BurgerStore
 {
-    enum Size
+    public enum Size_
     {
         small,
         medium,

@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BurgerStore
 {
-    class BaseProduct
+    public abstract class BaseProduct
     {
+        public string Name { get; set; }
+        public double Price { get; set; }
     }
 }

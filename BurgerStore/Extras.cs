@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BurgerStore
 {
-    class Extras
+    public class Extras:BaseProduct
     {
+        public Extras()
+        {
+
+        }
+        public Extras(string name, double price)
+        {
+            Name = name;
+            Price = price;
+        }
     }
 }

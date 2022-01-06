@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace BurgerStore
 {
-    class Menu
+    public class Menu:BaseProduct
     {
+        public Menu()
+        {
+
+        }
+        public Menu(string name, double price)
+        {
+          Name = name;
+           Price = price;
+        }
     }
 }
