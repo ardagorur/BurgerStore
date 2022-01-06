@@ -19,7 +19,12 @@ namespace BurgerStore
 
         private void btnProdSave_Click(object sender, EventArgs e)
         {
-            
+            FormNewOrder.Menus_.Add(new Menu
+            {
+                Name = txName.Text,
+                Price = Convert.ToDouble(numPrice.Value)
+            });
+            MessageBox.Show("Yeni Menü eklendi.");
         }
     }
 }

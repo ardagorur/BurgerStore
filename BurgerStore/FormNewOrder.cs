@@ -16,7 +16,7 @@ namespace BurgerStore
         {
             InitializeComponent();
         }
-        public static List<Menu> Menus = new List<Menu>()
+        public static List<Menu> Menus_ = new List<Menu>()
         {
             new Menu("asd",12),
             new Menu("asdda",123)
@@ -30,7 +30,7 @@ namespace BurgerStore
         public static List<Orders> Orders = new List<Orders>();
         private void FormNewOrder_Load(object sender, EventArgs e)
         {
-            foreach (var item in Menus)
+            foreach (var item in Menus_)
             {
                 cbMenu.Items.Add(item);
             }
