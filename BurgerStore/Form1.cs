@@ -16,7 +16,7 @@ namespace BurgerStore
         {
             InitializeComponent();
         }
-
+        
         private void menüEkleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormAddMenu frmmenu = new FormAddMenu();
@@ -42,7 +42,19 @@ namespace BurgerStore
         }
         private Form formdoldur(Form form)
         {
+
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm != form)
+                {
+                    frm.Dispose();
+                    frm.Close();
+                }
+            }
             form.MdiParent = this;
+            //form.MdiParent.Size = form.Size;
+            form.Dock = DockStyle.Fill;
+            form.StartPosition = FormStartPosition.CenterParent;
             form.Show();
             return form;
         }

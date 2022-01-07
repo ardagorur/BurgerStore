@@ -16,12 +16,13 @@ namespace BurgerStore
         {
             InitializeComponent();
         }
+        public static List<Orders> paidOrders = new List<Orders>();
         double totalIncome = 0;
         double numberOfSold = 0;
         double extraInncome = 0;
         private void FormOrdersDetails_Load(object sender, EventArgs e)
         {
-            foreach (var item in FormNewOrder.Orders)
+            foreach (var item in paidOrders)
             {
                 totalIncome += item.TotalPrice;
                 numberOfSold += item.Piece;

@@ -30,12 +30,21 @@ namespace BurgerStore
                 default:
                     break;
             }
-            //foreach (var item in Extras)
-            //{
-            //    TotalPrice += item.Price;
-            //}
             TotalPrice *= Piece;
+            foreach (var item in Extras)
+            {
+                TotalPrice += item.Price;
+            }
+        }
+        public override string ToString()
+        {
+            string extraAdded= " ";
 
+            foreach (var item in Extras)
+            {
+                extraAdded += item.Name + ",";
+            }
+            return ($"{SelectedMenu.Name}'den {Piece} adet,{Size} boyunda, Ekstra Malzemeler :{extraAdded}");
         }
     }
 }

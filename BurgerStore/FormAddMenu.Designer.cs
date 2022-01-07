@@ -39,7 +39,7 @@ namespace BurgerStore
             // 
             // btnProdSave
             // 
-            this.btnProdSave.Location = new System.Drawing.Point(134, 90);
+            this.btnProdSave.Location = new System.Drawing.Point(326, 205);
             this.btnProdSave.Name = "btnProdSave";
             this.btnProdSave.Size = new System.Drawing.Size(115, 23);
             this.btnProdSave.TabIndex = 7;
@@ -49,7 +49,7 @@ namespace BurgerStore
             // 
             // txName
             // 
-            this.txName.Location = new System.Drawing.Point(134, 35);
+            this.txName.Location = new System.Drawing.Point(326, 150);
             this.txName.Name = "txName";
             this.txName.Size = new System.Drawing.Size(100, 20);
             this.txName.TabIndex = 6;
@@ -57,7 +57,7 @@ namespace BurgerStore
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 71);
+            this.label2.Location = new System.Drawing.Point(262, 186);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(34, 13);
             this.label2.TabIndex = 5;
@@ -66,7 +66,7 @@ namespace BurgerStore
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 38);
+            this.label1.Location = new System.Drawing.Point(262, 153);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(25, 13);
             this.label1.TabIndex = 4;
@@ -74,7 +74,7 @@ namespace BurgerStore
             // 
             // numPrice
             // 
-            this.numPrice.Location = new System.Drawing.Point(134, 64);
+            this.numPrice.Location = new System.Drawing.Point(326, 179);
             this.numPrice.Name = "numPrice";
             this.numPrice.Size = new System.Drawing.Size(120, 20);
             this.numPrice.TabIndex = 8;
@@ -83,7 +83,7 @@ namespace BurgerStore
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 198);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.numPrice);
             this.Controls.Add(this.btnProdSave);
             this.Controls.Add(this.txName);

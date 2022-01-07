@@ -42,6 +42,7 @@ namespace BurgerStore
             this.rbSmall = new System.Windows.Forms.RadioButton();
             this.rbMedium = new System.Windows.Forms.RadioButton();
             this.rbLarge = new System.Windows.Forms.RadioButton();
+            this.btnOk = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numPiece)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,11 +165,22 @@ namespace BurgerStore
             this.rbLarge.Text = "Büyük";
             this.rbLarge.UseVisualStyleBackColor = true;
             // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(622, 325);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(147, 23);
+            this.btnOk.TabIndex = 14;
+            this.btnOk.Text = "Sipraişi Tamamla";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
             // FormNewOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.rbLarge);
             this.Controls.Add(this.rbMedium);
             this.Controls.Add(this.rbSmall);
@@ -208,5 +220,6 @@ namespace BurgerStore
         private System.Windows.Forms.RadioButton rbSmall;
         private System.Windows.Forms.RadioButton rbMedium;
         private System.Windows.Forms.RadioButton rbLarge;
+        private System.Windows.Forms.Button btnOk;
     }
 }

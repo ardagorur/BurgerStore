@@ -14,8 +14,8 @@ namespace BurgerStore
         }
         public Menu(string name, double price)
         {
-          Name = name;
-           Price = price;
+            Name = name;
+            Price = price;
         }
     }
 }
