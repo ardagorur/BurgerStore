@@ -16,5 +16,15 @@ namespace BurgerStore
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            FormNewOrder.Extras.Add(new Extras
+            {
+                Name = txName.Text,
+                Price = Convert.ToDouble(numPrice.Value)
+            });
+            MessageBox.Show("Ekstra başarıyla kaydedildi.");
+        }
     }
 }
