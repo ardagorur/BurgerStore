@@ -76,6 +76,7 @@ namespace BurgerStore
             CurrentOrder.Add(newOrder);
             lbMenu.Items.Add(newOrder.ToString());
             totalPrice();
+           
         }
         public double totalPrice()
         {
@@ -112,6 +113,7 @@ namespace BurgerStore
                 lbMenu.Items.Clear();
                 CurrentOrder.Clear();
             }
+            Function_.Clear(Controls);
 
         }
     }

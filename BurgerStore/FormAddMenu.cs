@@ -25,6 +25,7 @@ namespace BurgerStore
                 Price = Convert.ToDouble(numPrice.Value)
             });
             MessageBox.Show("Yeni Menü eklendi.");
+            Function_.Clear(Controls);
         }
     }
 }

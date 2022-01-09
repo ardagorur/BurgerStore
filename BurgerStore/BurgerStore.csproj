@@ -79,6 +79,7 @@
     <Compile Include="FormOrdersDetails.Designer.cs">
       <DependentUpon>FormOrdersDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Function_.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="Program.cs" />
